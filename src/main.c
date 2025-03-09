@@ -14,18 +14,18 @@ int main()
     int stackTop = 0;
     int choice;
     Menu *meniulAnterior;
-    while (1)
+    while (1) // se opreste cand ruleaza pauza() pentru ca asteapta input de la user
     {
         system(CLEAR_SCREEN);
         arataHeader(menuStack, stackTop);
-        arataPagina(currentMenu); // Afisează pagina curenta
+        arataPagina(currentMenu);
 
         scanf("%d", &choice);
 
         if (choice == 0)
         {
             curatareEcran();
-            goto exit;
+            goto exit; // nu e necesar goto, dar am vrut sa il folosesc
         }
         else if (choice > 0 && choice <= currentMenu->itemCount)
         {
@@ -52,8 +52,6 @@ int main()
         else
         {
             printf("Optiune invalida\n");
-            char userInput[100];
-            printf("Introduceti textul: ");
             pauza();
         }
     }
