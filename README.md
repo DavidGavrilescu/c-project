@@ -4,5 +4,5 @@
 3. Run project: ``cProject``
 
 # Third party tools
-1. cMake - build tool: https://cmake.org/
+1. CMake - build tool: https://cmake.org/
 2. cJSON - for handling JSON in C: https://github.com/DaveGamble/cJSON
