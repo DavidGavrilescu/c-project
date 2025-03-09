@@ -1,7 +1,7 @@
 # Setup
 1. Generate Makefile: ``cmake .``
 2. Build project: ``make``
-3. Run project: ``cProject``
+3. Run project: ``./cProject``
 
 # Third party tools
 1. CMake - build tool: https://cmake.org/

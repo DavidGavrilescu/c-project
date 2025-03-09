@@ -14,6 +14,7 @@ int main()
     int stackTop = 0;
     int choice;
     Menu *meniulAnterior;
+
     while (1) // se opreste cand ruleaza pauza() pentru ca asteapta input de la user
     {
         system(CLEAR_SCREEN);
@@ -22,6 +23,7 @@ int main()
 
         scanf("%d", &choice);
 
+        // 0 inseamna ca iesim din program
         if (choice == 0)
         {
             curatareEcran();
@@ -31,27 +33,31 @@ int main()
         {
             MenuItem selectedItem = currentMenu->items[choice - 1];
 
-            if (selectedItem.submenu != NULL)
+            if (selectedItem.submenu != NULL) // daca avem submeniu, acesta devine meniul curent
             {
                 menuStack[++stackTop] = selectedItem.submenu;
                 currentMenu = selectedItem.submenu;
             }
-            else if (selectedItem.action != NULL)
+
+            else if (selectedItem.action != NULL) // daca avem actiune, o rulam
             {
                 selectedItem.action();
             }
-            else
+
+            else // altfel, mergem la meniul anterior din stiva
             {
                 currentMenu = menuStack[--stackTop];
             }
         }
+        /* daca alegerea userului este cu 1 mai mare decat nr de optiuni din meniu
+           mergem inapoi (aceasta optiune este afisata in functia arataPagina) */
         else if (choice == currentMenu->itemCount + 1)
         {
             currentMenu = menuStack[--stackTop];
         }
         else
         {
-            printf("Optiune invalida\n");
+            printf("Optiune invalida...\n");
             pauza();
         }
     }

@@ -83,10 +83,10 @@ void arataHeader(Menu **menuStack, int stackTop)
     }
     printf("\n==============================================================================\n");
 }
-// Funcție pentru afișarea unei pagini de meniu
+
 void arataPagina(Menu *menu)
 {
-    printf("%s:\n", menu->title);
+    // printf("%s:\n", menu->title);
     for (int i = 0; i < menu->itemCount; i++)
     {
         
