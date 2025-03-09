@@ -1,7 +1,7 @@
 {
     "clienti": [
         {
-            "numarCont": 1,
+            "numarCont": 8,
             "nume": "Gavrilescu",
             "prenume": "David",
             "contCurent": 132.32
@@ -10,6 +10,36 @@
             "numarCont": 2,
             "nume": "Davrilescu",
             "prenume": "Gavid",
+            "contCurent": 100
+        },
+        {
+            "numarCont": 3,
+            "nume": "Abcdescu",
+            "prenume": "Xyz",
+            "contCurent": 100
+        },
+        {
+            "numarCont": 4,
+            "nume": "Zebra",
+            "prenume": "Corina",
+            "contCurent": 100
+        },
+        {
+            "numarCont": 5,
+            "nume": "Elefant",
+            "prenume": "Ioana",
+            "contCurent": 100
+        },
+        {
+            "numarCont": 6,
+            "nume": "Rosu",
+            "prenume": "Andrei",
+            "contCurent": 100
+        },
+        {
+            "numarCont": 7,
+            "nume": "Verde",
+            "prenume": "Robert",
             "contCurent": 100
         }
     ]

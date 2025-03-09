@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 3.10)
-project(cProject)
-
-add_subdirectory(external/cJSON)
-
-add_executable(cProject main.cpp)
-target_link_libraries(cProject cjson)
-
-target_include_directories(cProject PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/external/cJSON)
