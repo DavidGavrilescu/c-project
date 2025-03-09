@@ -1,3 +1,16 @@
+# other
+build
+.vscode/
+
+
+# cmake
+*.vcxproj
+*.sln
+*.xcodeproj
+*.xcworkspace
+CMakeCache.txt
+CMakeFiles/
+
 # Prerequisites
 *.d
 

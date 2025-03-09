@@ -1,0 +1,16 @@
+{
+    "clienti": [
+        {
+            "numarCont": 1,
+            "nume": "Gavrilescu",
+            "prenume": "David",
+            "contCurent": 132.32
+        },
+        {
+            "numarCont": 2,
+            "nume": "Davrilescu",
+            "prenume": "Gavid",
+            "contCurent": 100
+        }
+    ]
+}
